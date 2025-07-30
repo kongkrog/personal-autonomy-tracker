@@ -73,3 +73,6 @@ export default tseslint.config([
 Set up the project and currently dealing with making a UI skeleton before implement anything function related. I am aware that project to focus on functionality first but I want to rather focus on taking small step at a time and try to improve my UI/UX skills first. First time learning about design pattern as well. Turned out designing UI/UX takes a lot of iterations and refinement, and I'm currently working on refining the Card UI, the Filter Bar.
 
 To-do tasks: Continue refining UI, implement mock dialog. Possibility adding page switching.
+
+![alt text](30_07_2025.png)
+###### The mock UI that I am working on.
