@@ -23,7 +23,7 @@ export default function Tag({ content, color, children }: TagInterface) {
   const COLOR_CLASSNAME = setColorClassname(color || "");
   return (
     <div
-      className={`${COLOR_CLASSNAME} flex flex-row justify-center items-center border-0 px-3 py-1 font-semibold p-1.5 rounded-xl text-sm`}
+      className={`whitespace-nowrap flex flex-row justify-center items-center p-0.5 ps-2 pe-2 rounded-2xl text-sm border-1 border-gray-500 text-gray-500 hover:border-purple-500 hover:text-purple-500 transition-all`}
     >
       {children}
       {content}

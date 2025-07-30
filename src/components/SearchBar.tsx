@@ -6,7 +6,7 @@ export default function SearchBar() {
       <BsSearch />
       <input
         type="text"
-        className="input bg-gray-100 p-4 rounded-lg shadow-sm"
+        className="input text-gray-500 bg-gray-100 p-4 rounded-3xl shadow-sm outline-0 focus:bg-purple-500 focus:text-purple-200 transition-colors"
         placeholder="Search..."
       />
     </div>

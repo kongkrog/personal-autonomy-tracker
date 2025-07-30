@@ -7,10 +7,12 @@ import FloatingButton from "./components/FloatingButton";
 
 export default function mainApp() {
   return (
-    <div className="flex flex-row gap-4 items-center">
-      <Sidebar></Sidebar>
-      <ContentSection></ContentSection>
+    <>
+      <div className="flex flex-row gap-8 items-center p-8">
+        <Sidebar></Sidebar>
+        <ContentSection></ContentSection>
+      </div>
       <FloatingButton></FloatingButton>
-    </div>
+    </>
   );
 }

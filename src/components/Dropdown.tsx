@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState("Option 1");
+  const [selected, setSelected] = useState("Default Placeholder");
 
-  const options = ["Option 1", "Option 2", "Option 3"];
+  const options = ["Filter Date", "Filter Type", "Filter Emotion"];
 
   const handleSelect = (option: string) => {
     setSelected(option);
@@ -15,7 +15,7 @@ export default function Dropdown() {
     <div className="relative inline-block text-left h-12">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center justify-between w-40 h-14 px-4 text-sm bg-gray-100 rounded-md shadow-sm hover:bg-gray-50"
+        className="inline-flex items-center justify-between w-40 h-14 px-4 text-base text-black bg-gray-100 rounded-3xl shadow-sm hover:bg-gray-50 transition-all"
       >
         {selected}
         <svg
@@ -34,12 +34,12 @@ export default function Dropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute z-10 w-40 mt-2 bg-white border border-gray-200 rounded-md shadow-lg">
+        <div className="absolute z-10 w-40 mt-2 bg-white border border-gray-200 rounded-3xl shadow-lg transition-all">
           {options.map((option) => (
             <button
               key={option}
               onClick={() => handleSelect(option)}
-              className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100"
+              className="w-full px-4 py-2 text-left text-base hover:bg-gray-100 rounded-3xl"
             >
               {option}
             </button>
